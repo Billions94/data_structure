@@ -81,8 +81,6 @@ export class App {
           try {
             let status;
 
-            console.log(this.database.get(parseInt(params.id)));
-
             if (this.database.get(parseInt(params.id))) {
               this.database.delete(parseInt(params.id));
               status = true;
